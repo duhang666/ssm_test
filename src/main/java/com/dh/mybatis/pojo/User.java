@@ -1,10 +1,23 @@
-package com.dh.mybatis.po;
+package com.dh.mybatis.pojo;
 
 public class User {
     private int id;
     private String username;
     private String address;
     private int age;
+
+    public User(int id, String username, String address, int age) {
+        this.id = id;
+        this.username = username;
+        this.address = address;
+        this.age = age;
+    }
+
+    public User(String username, String address, int age) {
+        this.username = username;
+        this.address = address;
+        this.age = age;
+    }
 
     public int getId() {
         return id;

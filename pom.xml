@@ -76,5 +76,14 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <!--打包时包含mapper.xml-->
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>
